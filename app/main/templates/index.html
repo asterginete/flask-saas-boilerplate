@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- You can include CSS frameworks like Bootstrap for styling -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Welcome to My SaaS App</h1>
+    </header>
+
+    <main>
+        <p>Welcome to our platform! If you have an account, you can <a href="{{ url_for('auth.login') }}">login</a>. If not, please <a href="{{ url_for('auth.register') }}">register</a> to get started.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My SaaS App. All rights reserved.</p>
+    </footer>
+</div>
+
+<!-- You can include JS frameworks like jQuery or Bootstrap's JS here -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+</body>
+</html>
