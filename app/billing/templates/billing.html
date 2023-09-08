@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- Including Bootstrap for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Billing & Payments</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Current Subscription</h2>
+            <!-- Placeholder for subscription details -->
+            <p>Plan: Premium</p>
+            <p>Next Billing Date: 1st September 2023</p>
+        </section>
+
+        <section>
+            <h2>Payment Method</h2>
+            <!-- Placeholder for payment method details -->
+            <p>Card: **** **** **** 1234</p>
+            <p>Expiry: 12/25</p>
+            <button class="btn btn-primary">Update Payment Method</button>
+        </section>
+
+        <section>
+            <h2>Payment History</h2>
+            <!-- Placeholder for payment history -->
+            <ul>
+                <li>Payment of $10 on 1st August 2023</li>
+                <li>Payment of $10 on 1st July 2023</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="{{ url_for('main.dashboard') }}">Back to Dashboard</a></p>
+        <p>&copy; 2023 My SaaS App. All rights reserved.</p>
+    </footer>
+</div>
+
+<!-- Including Bootstrap's JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
